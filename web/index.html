@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle" class="btn-theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Snake Game <i class="fas fa-snake"></i></h1>
+            <div class="score-board">
+                <div class="score current-score">
+                    <i class="fas fa-star"></i>
+                    <span>Score</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score high-score">
+                    <i class="fas fa-trophy"></i>
+                    <span>Best</span>
+                    <span id="highScore">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+            <div class="controls">
+                <button id="startBtn" class="btn-start">
+                    <i class="fas fa-play"></i>
+                    <span>Start Game</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="game-instructions">
+            <p><i class="fas fa-keyboard"></i> Use arrow keys to move</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
